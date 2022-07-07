@@ -1,10 +1,23 @@
+import { useState } from "react";
 import Intent from "components/Wizard/Intents/Intent";
-import { getIntents } from "services/intents";
+import { getIntents, IntentInterface } from "services/intents";
 import "./Intents.css";
 
 const intents = getIntents();
 
 const Intents = () => {
+  const [selectedIntents, setSelectedIntents] = useState<IntentInterface[]>([]);
+
+  const toggleIntent = (intent: IntentInterface) => {
+    const selected = [...selectedIntents];
+    if (selected.includes(intent)) {
+      selected.splice(selected.indexOf(intent), 1);
+    } else {
+      selected.push(intent);
+    }
+    setSelectedIntents(selected);
+  };
+
   return (
     <div>
       <h1 className="wizard__title">Customize your Robot</h1>
@@ -26,7 +39,12 @@ const Intents = () => {
       </p>
       <div className="intents">
         {intents.map((intent) => (
-          <Intent intent={intent} key={intent.id} />
+          <Intent
+            intent={intent}
+            key={intent.id}
+            selected={selectedIntents.includes(intent)}
+            onClick={toggleIntent}
+          />
         ))}
       </div>
     </div>

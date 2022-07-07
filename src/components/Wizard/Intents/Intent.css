@@ -15,7 +15,7 @@
 }
 
 .intent--selected {
-  outline: solid 2px rgb(93, 90, 220);
+  border: solid 3px rgb(93, 90, 220);
 }
 
 .intent__title {
