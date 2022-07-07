@@ -2,6 +2,7 @@
   border: solid 1px rgb(93, 90, 220);
   border-radius: 4px;
   box-sizing: border-box;
+  cursor: pointer;
   font-size: 0.9em;
   margin-bottom: 1em;
   min-height: 4em;
@@ -10,8 +11,8 @@
   padding: 0.5em;
 }
 
-.intent p:last-child {
-  margin-bottom: 0;
+.intent p {
+  margin-bottom: 0.5em;
 }
 
 .intent--selected {
@@ -20,4 +21,9 @@
 
 .intent__title {
   font-size: 1em;
+}
+
+.btn.intent__see-more {
+  padding-left: 0;
+  padding-right: 0;
 }

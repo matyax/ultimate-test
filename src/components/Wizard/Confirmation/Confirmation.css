@@ -1,0 +1,15 @@
+.confirmation {
+}
+
+.confirmation__empty {
+  display: flex;
+  font-size: 2em;
+  height: 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmation__intents {
+  height: 20em;
+  overflow-y: scroll;
+}

@@ -1,0 +1,10 @@
+.thanks {
+}
+
+.thanks__message {
+  display: flex;
+  font-size: 4em;
+  height: 5em;
+  justify-content: center;
+  align-items: center;
+}

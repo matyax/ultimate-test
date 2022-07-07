@@ -24,6 +24,10 @@
   font-size: 1.2em;
 }
 
+.wizard__header {
+  text-align: right;
+}
+
 .wizard__body {
   min-height: 20em;
 }
@@ -38,7 +42,7 @@
 @media (prefers-reduced-motion: no-preference) {
   .wizard__robot {
     animation: Robot-spin infinite 3.5s ease-in-out;
-    animation-delay: 4s;
+    animation-delay: 3s;
   }
 }
 
