@@ -1,0 +1,23 @@
+.intent {
+  border: solid 1px rgb(93, 90, 220);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  min-height: 4em;
+  line-height: 1.2em;
+  width: 98%;
+  padding: 0.5em;
+}
+
+.intent p:last-child {
+  margin-bottom: 0;
+}
+
+.intent--selected {
+  outline: solid 2px rgb(93, 90, 220);
+}
+
+.intent__title {
+  font-size: 1em;
+}

@@ -12,7 +12,7 @@ const Welcome = () => {
         Complete the following steps to configure different aspects of your
         agent, to provide your customers with the best possible experience.{" "}
         <a
-          href="https://support.ultimate.ai/hc/en-us/articles/4405740079506-What-is-an-intent-"
+          href="https://support.ultimate.ai/hc/en-us/categories/4405739796114-Conversational-AI"
           target="_blank"
           rel="noopener noreferrer"
         >

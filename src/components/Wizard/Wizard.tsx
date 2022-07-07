@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "react-bootstrap";
 import Steps from "components/Steps";
 import Welcome from "components/Wizard/Welcome";
+import Intents from "components/Wizard/Intents";
 import "./Wizard.css";
 
 const Wizard = () => {
@@ -20,7 +21,10 @@ const Wizard = () => {
       <div className="wizard__header">
         <Steps current={step} total={4} />
       </div>
-      <div className="wizard__body">{step === 1 && <Welcome />}</div>
+      <div className="wizard__body">
+        {step === 1 && <Welcome />}
+        {step === 2 && <Intents />}
+      </div>
       <div className="wizard__footer">
         <Button variant="primary" onClick={nextStep}>
           Next
