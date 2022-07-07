@@ -1,7 +1,74 @@
 .wizard {
   border: solid 1px lightgray;
-  box-shadow: 2px 2px 3px 0px lightgray;
   border-radius: 5px;
-  padding: 1em;
+  box-shadow: 2px 2px 3px 0px lightgray;
   margin-top: 1em;
+  padding: 1em;
+}
+
+.wizard__robot-container {
+  margin: 2em 0;
+  text-align: center;
+}
+
+.wizard__robot {
+  height: 12em;
+  margin: 0 auto;
+}
+
+.wizard__title {
+  font-size: 1.5em;
+}
+
+.wizard__body {
+  min-height: 20em;
+}
+
+.wizard__footer {
+  display: flex;
+  direction: rtl;
+  justify-content: space-between;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .wizard__robot {
+    animation: Robot-spin infinite 3.5s ease-in-out;
+    animation-delay: 4s;
+  }
+}
+
+@keyframes Robot-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(13deg);
+  }
+  30% {
+    transform: rotate(-7deg);
+  }
+  45% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
