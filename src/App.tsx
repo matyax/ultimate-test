@@ -1,12 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Col, Container, Row } from "react-bootstrap";
+import Wizard from "components/Wizard";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-    
-    </div>
+    <Container fluid>
+      <Row>
+        <Col md={{ span: 6, offset: 3 }}>
+          <Wizard />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
