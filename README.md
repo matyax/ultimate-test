@@ -1,4 +1,4 @@
-# Teach Challenge for Ultimate.ai
+# Tech Challenge for Ultimate.ai
 
 In this repository you can find my implementation of the tech challenge for Ultimate.ai. For this project, I used:
 
@@ -14,6 +14,7 @@ Nice to haves or things I would have done:
 - Create a design system using SASS or another CSS abstractions.
 - A library of UI components with Storybook.
 - End-to-end tests with Cypress.
+- Better responsivity, but it currently works nicely in small screens.
 
 ## Available Scripts
 
