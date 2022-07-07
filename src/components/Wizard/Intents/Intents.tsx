@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "react-bootstrap";
 import Intent from "components/Wizard/Intents/Intent";
 import { getIntents, IntentInterface } from "services/intents";
 import "./Intents.css";
@@ -23,6 +24,16 @@ const Intents = ({ selected = [], onChange }: Props) => {
     }
     setSelectedIntents(selected);
     onChange(selected);
+  };
+
+  const selectAll = () => {
+    setSelectedIntents(intents);
+    onChange(intents);
+  };
+
+  const clear = () => {
+    setSelectedIntents([]);
+    onChange([]);
   };
 
   return (
@@ -55,6 +66,12 @@ const Intents = ({ selected = [], onChange }: Props) => {
           />
         ))}
       </div>
+      <Button variant="link" onClick={selectAll}>
+        Select all
+      </Button>
+      <Button variant="link" onClick={clear}>
+        Clear
+      </Button>
     </div>
   );
 };
