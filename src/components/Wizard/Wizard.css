@@ -41,43 +41,16 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .wizard__robot {
-    animation: Robot-spin infinite 3.5s ease-in-out;
-    animation-delay: 3s;
+    animation: Robot-spin infinite 2.5s ease-in-out;
+    animation-delay: 2s;
   }
 }
 
 @keyframes Robot-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(0deg);
-  }
-  15% {
-    transform: rotate(13deg);
-  }
   30% {
-    transform: rotate(-7deg);
-  }
-  45% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  60% {
-    transform: rotate(0deg);
+    transform: translate(-2px, 5px);
   }
   70% {
-    transform: rotate(0deg);
-  }
-  80% {
-    transform: rotate(0deg);
-  }
-  90% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
+    transform: translate(3px, -4px);
   }
 }
